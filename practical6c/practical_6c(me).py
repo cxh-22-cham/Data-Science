@@ -15,7 +15,7 @@ Original file is located at
 We use kagglehub to fetch a real-world dataset.
 """
 
-!pip install kagglehub -q
+
 import kagglehub
 import pandas as pd
 import numpy as np
