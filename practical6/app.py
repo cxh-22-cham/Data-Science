@@ -110,20 +110,3 @@ if st.button("Predict Price"):
         f"Predicted House Value: ${prediction[0]:,.2f}"
     )
 
-
-# --------------------------
-# Feature Importance
-# --------------------------
-
-st.subheader("Top Important Features")
-
-
-importance = pd.Series(
-    rf.feature_importances_,
-    index=X.columns
-).sort_values(ascending=False)
-
-
-st.bar_chart(
-    importance.head(10)
-)
