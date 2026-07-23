@@ -130,7 +130,7 @@ Answer the following questions based on your observations of the training proces
 We use Gradio to create a web-based predictor.
 """
 
-!pip install gradio -q
+
 import gradio as gr
 
 def predict_price(*args):
